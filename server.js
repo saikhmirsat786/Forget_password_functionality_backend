@@ -2,7 +2,7 @@ const express = require("express");
 const { connections } = require("./config/db");
 const cors = require("cors");
 const { UserRoute } = require('./routes/UserRoute')
-const { RecruiterRoute } = require('./routes/RecruiterRoute')
+
 
 
 
@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/users', UserRoute)
-app.use('/recruiters', RecruiterRoute)
+
 
 
 app.listen(8080, async () => {
