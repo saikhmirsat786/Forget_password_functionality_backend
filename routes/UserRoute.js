@@ -158,7 +158,7 @@ UserRoute.post("/resetpassword", async (req, res) => {
                 from: "saikh.mirsat55@gmail.com",
                 to: findmail[0].email,
                 subject: "Password Reset",
-                text: `Here is your password reset link: http://localhost:3000/forgetpassword/${findmail[0]._id}/${token}`,
+                text: `Here is your password reset link: https://forget-password-funtionality.vercel.app/forgetpassword/${findmail[0]._id}/${token}`,
             };
 
             // Send the email
